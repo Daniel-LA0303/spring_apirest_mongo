@@ -25,7 +25,7 @@ public class UserController {
     public ResponseEntity<Map<String, List<User>>> getUsers(){
         try {
             List<User> users = userService.findAll();
-            Map<String, List<User>> response = Collections.singletonMap("users", users);
+            Map<String, List<User>> response = Collections.singletonMap("users-test", users);
             return new ResponseEntity<>(response, HttpStatus.OK);
         } catch (Exception e) {
             // Log the exception for debugging purposes
