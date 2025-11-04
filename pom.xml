@@ -12,6 +12,10 @@
 	<artifactId>SB_apirest_mongo</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>SB_apirest_mongo</name>
+	
+	<!-- Necesitamos el empaqetamiento war para poder desplegarlo en Tomacat -->
+	<packaging>war</packaging>
+	
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
