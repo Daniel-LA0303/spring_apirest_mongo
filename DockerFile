@@ -33,5 +33,6 @@ ENV PATH="/opt/jre-minimal/bin:$PATH"
 # Copiar el JAR compilado
 COPY --from=builder /app/target/api-spring-boot-mongo.jar app.jar
 
+
 # Comando para ejecutar la app
 CMD ["java", "-jar", "app.jar"]
