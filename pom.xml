@@ -14,7 +14,7 @@
 	<name>SB_apirest_mongo</name>
 	
 	<!-- Necesitamos el empaqetamiento war para poder desplegarlo en Tomacat -->
-	<packaging>war</packaging>
+	<!-- <packaging>war</packaging> -->
 	
 	<description>Demo project for Spring Boot</description>
 	<properties>
@@ -45,7 +45,7 @@
 			<version>2.0.2</version>
 		</dependency>
 
-		<!-- dependency to tomaca remote-->
+		<!-- dependency to tomcat remote-->
 	    <dependency>
 	        <groupId>org.springframework.boot</groupId>
 	        <artifactId>spring-boot-starter-tomcat</artifactId>
@@ -60,9 +60,7 @@
 			    <groupId>org.springframework.boot</groupId>
 			    <artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
-
 	    </plugins>
+	    <finalName>api-spring-boot-mongo</finalName>
 	</build>
-
-
 </project>
