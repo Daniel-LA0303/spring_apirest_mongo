@@ -46,11 +46,11 @@
 		</dependency>
 
 		<!-- dependency to tomcat remote-->
-	    <dependency>
+	    <!-- <dependency>
 	        <groupId>org.springframework.boot</groupId>
 	        <artifactId>spring-boot-starter-tomcat</artifactId>
 	        <scope>provided</scope>
-	    </dependency>
+	    </dependency> -->
 
 	</dependencies>
 
@@ -60,6 +60,12 @@
 			    <groupId>org.springframework.boot</groupId>
 			    <artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
+			
+			<plugin>
+	            <groupId>org.sonarsource.scanner.maven</groupId>
+	            <artifactId>sonar-maven-plugin</artifactId>
+	            <version>3.10.0.2594</version>
+	        </plugin>
 	    </plugins>
 	    <finalName>api-spring-boot-mongo</finalName>
 	</build>
